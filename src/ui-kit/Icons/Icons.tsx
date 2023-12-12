@@ -440,6 +440,21 @@ const Profile: FC = () => (
     />
   </svg>
 );
+const Dots: FC = () => (
+  <svg
+    xmlns='http://www.w3.org/2000/svg'
+    width='28'
+    height='7'
+    viewBox='0 0 28 7'
+    fill='none'
+  >
+    <g opacity='0.4'>
+      <rect y='0.5' width='6' height='6' rx='3' fill='#F9F9F9' />
+      <rect x='11' y='0.5' width='6' height='6' rx='3' fill='#F9F9F9' />
+      <rect x='22' y='0.5' width='6' height='6' rx='3' fill='#F9F9F9' />
+    </g>
+  </svg>
+);
 
 export {
   Logo,
@@ -456,4 +471,5 @@ export {
   Trash,
   Sun,
   Profile,
+  Dots,
 };

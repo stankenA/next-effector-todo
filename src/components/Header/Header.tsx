@@ -13,7 +13,7 @@ const Header: FC = () => {
       </Button>
       <Button type='button' icon={<Icons.Sun />} isTransparent />
       <div className={styles.profile}>
-        <p className={styles.profile__txt}>Greetings, username</p>
+        <p className={styles.profile__txt}>username</p>
         <div className={styles.profile__container}>
           <Image className={styles.profile__img} src={avatar} alt='avatar' />
           <Button
