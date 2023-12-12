@@ -1,0 +1,132 @@
+@import "src/styles/mixins";
+
+.aside {
+  position: fixed;
+  left: 0;
+  top: 0;
+  height: 100%;
+  width: 232px;
+  background-color: var(--card-bg);
+}
+
+.nav {
+  display: flex;
+  flex-direction: column;
+  gap: 60px;
+  box-sizing: border-box;
+  width: 100%;
+  height: 100%;
+  padding: 20px 0 20px 20px;
+}
+
+.logo {
+  @include reset-link;
+  display: flex;
+  align-items: center;
+  gap: 10px;
+
+  &__container {
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    width: 54px;
+    height: 54px;
+    border-radius: 12px;
+    background-color: var(--accent);
+  }
+
+  &__title {
+    color: var(--accent);
+    font-family: Montserrat;
+    font-size: 18px;
+    font-style: normal;
+    font-weight: 600;
+    line-height: normal;
+    letter-spacing: 0.54px;
+    max-width: 55px;
+  }
+}
+
+.block {
+  display: flex;
+  flex-direction: column;
+  gap: 20px;
+}
+
+.subtitle {
+  color: var(--accent);
+  font-family: Nunito;
+  font-size: 24px;
+  font-style: normal;
+  font-weight: 600;
+  line-height: normal;
+  letter-spacing: 0.72px;
+}
+
+.list {
+  @include reset-list;
+  display: flex;
+  flex-direction: column;
+  gap: 20px;
+}
+
+.item {
+  &__link {
+    @include reset-link;
+    display: flex;
+    align-items: center;
+    gap: 10px;
+    width: 100%;
+    padding-top: 5px;
+    padding-bottom: 5px;
+  }
+
+  &__icon {
+    width: 18px;
+    height: 18px;
+    display: block;
+  }
+
+  &__txt {
+    color: var(--text);
+    font-family: Nunito;
+    font-size: 16px;
+    font-style: normal;
+    font-weight: 400;
+    line-height: normal;
+    letter-spacing: 0.4px;
+  }
+
+  &__active {
+    margin-left: auto;
+    height: 18px;
+    width: 30px;
+    border-radius: 10px 0px 0px 10px;
+    background: var(--accent);
+  }
+}
+
+.button {
+  @include reset-btn;
+  display: flex;
+  align-items: center;
+  gap: 10px;
+  cursor: pointer;
+  margin-top: auto;
+
+  &__icon {
+    width: 18px;
+    height: 18px;
+    display: block;
+  }
+
+  &__txt {
+    color: var(--unnamed, #f9f9f9);
+    font-family: Nunito;
+    font-size: 16px;
+    font-style: normal;
+    font-weight: 400;
+    line-height: normal;
+    letter-spacing: 0.4px;
+  }
+}
