@@ -4,9 +4,9 @@ export default function Home() {
   return (
     <>
       <Head>
-        <title>Todo</title>
+        <title>Todoshka | Main page</title>
       </Head>
-      <p>KEK</p>
+      <p>KEKW</p>
     </>
   );
 }

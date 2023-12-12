@@ -3,6 +3,7 @@ import styles from "./SideNav.module.scss";
 import Link from "next/link";
 import { Icons } from "@/ui-kit/Icons";
 import { categoriesItems, dataItems } from "./template";
+import Button from "@/ui-kit/Button/Button";
 
 const SideNav: FC = () => {
   return (
@@ -12,7 +13,7 @@ const SideNav: FC = () => {
           <span className={styles.logo__container}>
             <Icons.Logo />
           </span>
-          <h1 className={styles.logo__title}>Tasks Book</h1>
+          <h1 className={styles.logo__title}>TODO SHKA</h1>
         </Link>
         <div className={styles.block}>
           <h2 className={styles.subtitle}>Categories</h2>
@@ -48,10 +49,14 @@ const SideNav: FC = () => {
             ))}
           </ul>
         </div>
-        <button className={styles.button}>
-          <Icons.Login />
-          <p className={styles.button__txt}>Выйти</p>
-        </button>
+        <Button
+          className={styles.button}
+          type='button'
+          icon={<Icons.Login />}
+          isTransparent
+        >
+          Выйти
+        </Button>
       </nav>
     </aside>
   );

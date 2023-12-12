@@ -1,7 +1,6 @@
 .page {
   position: relative;
   width: 100%;
-  min-height: 100vh;
   max-width: var(--content-width);
   margin: 0 auto;
 }
@@ -9,7 +8,7 @@
 .content {
   --content-width: 1068px;
 
-  margin-top: 20px;
+  padding-top: 20px;
   margin-right: 70px;
   margin-left: auto;
   width: var(--content-width);

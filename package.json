@@ -9,6 +9,7 @@
     "lint": "next lint"
   },
   "dependencies": {
+    "clsx": "^2.0.0",
     "effector": "^23.0.0",
     "effector-react": "^23.0.1",
     "next": "14.0.4",

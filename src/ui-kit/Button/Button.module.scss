@@ -1,0 +1,29 @@
+@import "src/styles/mixins";
+
+.button {
+  @include reset-btn;
+  padding: 10px 25px;
+  border-radius: 8px;
+  background: var(--accent);
+  color: var(--text);
+  font-family: Nunito;
+  font-size: 16px;
+  font-style: normal;
+  font-weight: 600;
+  line-height: normal;
+  letter-spacing: 0.16px;
+  cursor: pointer;
+  display: flex;
+  align-items: center;
+  gap: 10px;
+  @include transition;
+
+  &:hover {
+    opacity: 0.6;
+  }
+
+  &_transparent {
+    background-color: transparent;
+    padding: 0px;
+  }
+}
