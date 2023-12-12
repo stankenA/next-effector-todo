@@ -1,0 +1,8 @@
+@import "./normalize";
+@import "./mixins";
+@import "./vars";
+
+body {
+  background-color: var(--main-bg);
+  color: var(--text);
+}
