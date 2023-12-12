@@ -1,0 +1,69 @@
+@import "src/styles/mixins";
+
+.tasks {
+  width: 566px;
+  padding: 20px;
+  background-color: var(--card-bg);
+  border-radius: 10px;
+  box-shadow: 0px 10px 25px 0px rgba(29, 52, 54, 0.08);
+
+  &__head {
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+  }
+
+  &__title {
+    color: var(--accent);
+    font-family: Nunito;
+    font-size: 18px;
+    font-style: normal;
+    font-weight: 600;
+    line-height: normal;
+    letter-spacing: 0.36px;
+  }
+
+  &__more {
+    padding: 10px;
+  }
+
+  &__content {
+    width: 100%;
+  }
+}
+
+.list {
+  @include reset-list;
+  display: flex;
+  flex-direction: column;
+  gap: 10px;
+  width: 100%;
+  margin-top: 20px;
+}
+
+.item {
+  width: 100%;
+  padding: 15px;
+  box-sizing: border-box;
+  display: flex;
+  align-items: center;
+  justify-content: space-between;
+  border-radius: 10px;
+  border: 1px solid rgba(249, 249, 249, 0.2);
+
+  &__container {
+    display: flex;
+    align-content: center;
+    gap: 10px;
+  }
+
+  &__txt {
+    color: var(--text);
+    font-family: Nunito;
+    font-size: 14px;
+    font-style: normal;
+    font-weight: 400;
+    line-height: normal;
+    letter-spacing: 0.28px;
+  }
+}
