@@ -1,47 +1,42 @@
 import { Icons } from "@/ui-kit/Icons";
 
 type Item = {
-  icon: React.FC;
+  Icon: React.FC;
   link: string;
   txt: string;
 };
 
 export const categoriesItems: Item[] = [
   {
-    icon: Icons.Home,
+    Icon: Icons.Home,
     link: "/",
     txt: "Home",
   },
   {
-    icon: Icons.Family,
+    Icon: Icons.Family,
     link: "/",
     txt: "Family",
   },
   {
-    icon: Icons.Work,
+    Icon: Icons.Work,
     link: "/",
     txt: "Work",
   },
   {
-    icon: Icons.Sport,
+    Icon: Icons.Sport,
     link: "/",
     txt: "Sport",
-  },
-  {
-    icon: Icons.PlusSquare,
-    link: "/",
-    txt: "Add",
   },
 ];
 
 export const dataItems: Item[] = [
   {
-    icon: Icons.Statistics,
+    Icon: Icons.Statistics,
     link: "/",
     txt: "Statistics",
   },
   {
-    icon: Icons.Trending,
+    Icon: Icons.Trending,
     link: "/",
     txt: "Compare",
   },

@@ -20,12 +20,18 @@ const SideNav: FC = () => {
             {categoriesItems.map((item, index) => (
               <li className={styles.item} key={index}>
                 <Link className={styles.item__link} href={item.link}>
-                  {<item.icon />}
+                  {<item.Icon />}
                   <p className={styles.item__txt}>{item.txt}</p>
                   {index === 0 && <span className={styles.item__active}></span>}
                 </Link>
               </li>
             ))}
+            <li className={styles.item}>
+              <button className={styles.item__button}>
+                <Icons.PlusSquare />
+                Add
+              </button>
+            </li>
           </ul>
         </div>
         <div className={styles.block}>
@@ -34,7 +40,7 @@ const SideNav: FC = () => {
             {dataItems.map((item, index) => (
               <li className={styles.item} key={index}>
                 <Link className={styles.item__link} href={item.link}>
-                  {<item.icon />}
+                  {<item.Icon />}
                   <p className={styles.item__txt}>{item.txt}</p>
                   {index === 0 && <span className={styles.item__active}></span>}
                 </Link>

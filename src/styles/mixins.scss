@@ -12,4 +12,9 @@
 @mixin reset-btn {
   background-color: transparent;
   border: none;
+  padding: 0;
+}
+
+@mixin transition($time: 0.4s) {
+  transition: all $time ease;
 }
