@@ -8,7 +8,7 @@ const Logo: FC = () => (
     viewBox='0 0 42 42'
     fill='none'
   >
-    <g clip-path='url(#clip0_1003_129)'>
+    <g clipPath='url(#clip0_1003_129)'>
       <path
         d='M33.25 5.25H25.935C25.2 3.22 23.275 1.75 21 1.75C18.725 1.75 16.8 3.22 16.065 5.25H8.75C6.825 5.25 5.25 6.825 5.25 8.75V33.25C5.25 35.175 6.825 36.75 8.75 36.75H33.25C35.175 36.75 36.75 35.175 36.75 33.25V8.75C36.75 6.825 35.175 5.25 33.25 5.25ZM21 5.25C21.9625 5.25 22.75 6.0375 22.75 7C22.75 7.9625 21.9625 8.75 21 8.75C20.0375 8.75 19.25 7.9625 19.25 7C19.25 6.0375 20.0375 5.25 21 5.25ZM24.5 29.75H12.25V26.25H24.5V29.75ZM29.75 22.75H12.25V19.25H29.75V22.75ZM29.75 15.75H12.25V12.25H29.75V15.75Z'
         fill='#F9F9F9'
@@ -290,7 +290,7 @@ const Edit: FC = () => (
     viewBox='0 0 18 18'
     fill='none'
   >
-    <g clip-path='url(#clip0_1003_11)'>
+    <g clipPath='url(#clip0_1003_11)'>
       <path
         fillRule='evenodd'
         clipRule='evenodd'
@@ -343,7 +343,7 @@ const Sun: FC = () => (
     viewBox='0 0 24 24'
     fill='none'
   >
-    <g clip-path='url(#clip0_303_5260)'>
+    <g clipPath='url(#clip0_303_5260)'>
       <path
         d='M12 17C14.7614 17 17 14.7614 17 12C17 9.23858 14.7614 7 12 7C9.23858 7 7 9.23858 7 12C7 14.7614 9.23858 17 12 17Z'
         stroke='#F9F9F9'
@@ -427,16 +427,16 @@ const Profile: FC = () => (
     <path
       d='M15 15.75V14.25C15 13.4544 14.6839 12.6913 14.1213 12.1287C13.5587 11.5661 12.7956 11.25 12 11.25H6C5.20435 11.25 4.44129 11.5661 3.87868 12.1287C3.31607 12.6913 3 13.4544 3 14.25V15.75'
       stroke='#F9F9F9'
-      stroke-width='1.5'
-      stroke-linecap='round'
-      stroke-linejoin='round'
+      strokeWidth='1.5'
+      strokeLinecap='round'
+      strokeLinejoin='round'
     />
     <path
       d='M9 8.25C10.6569 8.25 12 6.90685 12 5.25C12 3.59315 10.6569 2.25 9 2.25C7.34315 2.25 6 3.59315 6 5.25C6 6.90685 7.34315 8.25 9 8.25Z'
       stroke='#F9F9F9'
-      stroke-width='1.5'
-      stroke-linecap='round'
-      stroke-linejoin='round'
+      strokeWidth='1.5'
+      strokeLinecap='round'
+      strokeLinejoin='round'
     />
   </svg>
 );
