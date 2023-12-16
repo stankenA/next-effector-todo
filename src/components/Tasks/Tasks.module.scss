@@ -1,35 +1,11 @@
 @import "src/styles/mixins";
 
-.tasks {
-  width: 566px;
-  padding: 20px;
-  background-color: var(--card-bg);
-  border-radius: 10px;
-  box-shadow: 0px 10px 25px 0px rgba(29, 52, 54, 0.08);
+.more {
+  padding: 10px;
+}
 
-  &__head {
-    display: flex;
-    justify-content: space-between;
-    align-items: center;
-  }
-
-  &__title {
-    color: var(--accent);
-    font-family: Nunito;
-    font-size: 18px;
-    font-style: normal;
-    font-weight: 600;
-    line-height: normal;
-    letter-spacing: 0.36px;
-  }
-
-  &__more {
-    padding: 10px;
-  }
-
-  &__content {
-    width: 100%;
-  }
+.content {
+  width: 100%;
 }
 
 .list {

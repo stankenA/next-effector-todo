@@ -4,21 +4,22 @@ import { FC } from "react";
 import styles from "./Tasks.module.scss";
 import { $todos, removeTodo } from "@/stores/todos/todos";
 import { useUnit } from "effector-react";
+import CommonCard from "../CommonCard/CommonCard";
 
 const Tasks: FC = () => {
   const [todos, removeTodoFn] = useUnit([$todos, removeTodo]);
 
   return (
-    <div className={styles.tasks}>
-      <div className={styles.tasks__head}>
-        <h2 className={styles.tasks__title}>Активные задачи</h2>
+    <CommonCard
+      button={
         <Button
-          className={styles.tasks__more}
+          className={styles.more}
           type='button'
           icon={<Icons.Dots />}
           isTransparent
         />
-      </div>
+      }
+    >
       <ul className={styles.list}>
         {todos.map((item, index) => (
           <li className={styles.item} key={index}>
@@ -37,7 +38,7 @@ const Tasks: FC = () => {
           </li>
         ))}
       </ul>
-    </div>
+    </CommonCard>
   );
 };
 

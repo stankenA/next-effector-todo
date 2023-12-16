@@ -5,7 +5,9 @@ import Tasks from "@/components/Tasks/Tasks";
 const MainPage: FC = () => {
   return (
     <div className={styles.content}>
-      <Tasks />
+      <div className={styles.firstColumn}>
+        <Tasks />
+      </div>
     </div>
   );
 };

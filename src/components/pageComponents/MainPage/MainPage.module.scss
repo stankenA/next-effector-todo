@@ -3,3 +3,10 @@
   width: 100%;
   justify-content: space-between;
 }
+
+.firstColumn {
+  width: 566px;
+  display: flex;
+  flex-direction: column;
+  gap: 30px;
+}
