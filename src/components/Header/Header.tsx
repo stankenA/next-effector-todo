@@ -4,11 +4,19 @@ import Button from "@/ui-kit/Button/Button";
 import styles from "./Header.module.scss";
 import avatar from "@/assets/avatar.png";
 import Image from "next/image";
+import { useUnit } from "effector-react";
+import { addNewTodo } from "@/stores/todos/todos";
 
 const Header: FC = () => {
+  const addNewTodoFn = useUnit(addNewTodo);
+
   return (
     <header className={styles.header}>
-      <Button type='button' icon={<Icons.PlusCircle />}>
+      <Button
+        type='button'
+        icon={<Icons.PlusCircle />}
+        onClick={() => addNewTodoFn("kek")}
+      >
         Новая задача
       </Button>
       <Button type='button' icon={<Icons.Sun />} isTransparent />
