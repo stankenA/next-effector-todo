@@ -1,2 +1,36 @@
-.date {
+.content {
+  display: flex;
+  justify-content: space-between;
+}
+
+.block {
+  display: flex;
+  flex-direction: column;
+  gap: 5px;
+
+  &__title {
+    color: var(--text);
+    font-family: Nunito;
+    font-size: 14px;
+    font-style: normal;
+    font-weight: 400;
+    line-height: normal;
+    letter-spacing: 0.28px;
+  }
+
+  &__container {
+    display: flex;
+    align-items: center;
+    gap: 10px;
+  }
+
+  &__value {
+    color: var(--text);
+    font-family: Nunito;
+    font-size: 25px;
+    font-style: normal;
+    font-weight: 600;
+    line-height: normal;
+    letter-spacing: 0.5px;
+  }
 }
