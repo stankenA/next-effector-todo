@@ -1,16 +1,17 @@
 import Button from "@/ui-kit/Button/Button";
 import { Icons } from "@/ui-kit/Icons";
 import { FC } from "react";
-import styles from "./Tasks.module.scss";
+import styles from "./Todos.module.scss";
 import { $todos, removeTodo } from "@/stores/todos/todos";
 import { useUnit } from "effector-react";
 import CommonCard from "../CommonCard/CommonCard";
 
-const Tasks: FC = () => {
+const Todos: FC = () => {
   const [todos, removeTodoFn] = useUnit([$todos, removeTodo]);
 
   return (
     <CommonCard
+      title='Active tasks'
       button={
         <Button
           className={styles.more}
@@ -42,4 +43,4 @@ const Tasks: FC = () => {
   );
 };
 
-export default Tasks;
+export default Todos;

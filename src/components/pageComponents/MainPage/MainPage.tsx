@@ -1,12 +1,16 @@
 import { FC } from "react";
 import styles from "./MainPage.module.scss";
-import Tasks from "@/components/Tasks/Tasks";
+import Todos from "@/components/Todos/Todos";
+import DateInfo from "@/components/DateInfo/DateInfo";
 
 const MainPage: FC = () => {
   return (
     <div className={styles.content}>
       <div className={styles.firstColumn}>
-        <Tasks />
+        <Todos />
+      </div>
+      <div className={styles.secondColumn}>
+        <DateInfo />
       </div>
     </div>
   );

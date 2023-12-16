@@ -17,7 +17,7 @@ const Header: FC = () => {
         icon={<Icons.PlusCircle />}
         onClick={() => addNewTodoFn("kek")}
       >
-        Новая задача
+        New task
       </Button>
       <Button type='button' icon={<Icons.Sun />} isTransparent />
       <div className={styles.profile}>
